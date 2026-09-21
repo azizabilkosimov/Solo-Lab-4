@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Aziz | Personal Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f5f6f8;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        /* Hero / Jumbotron */
+        .jumbotron {
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: white;
+            border-radius: 0;
+            padding: 90px 20px;
+            margin-bottom: 0;
+        }
+
+        .jumbotron h1 {
+            font-weight: bold;
+        }
+
+        .hero-button {
+            margin-top: 15px;
+        }
+
+        /* About section */
+        .about-section {
+            padding: 60px 0;
+            background-color: white;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .section-line {
+            width: 60px;
+            height: 3px;
+            background-color: #457b9d;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Interest cards */
+        .interests-section {
+            padding: 60px 0;
+        }
+
+        .interest-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .interest-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.14);
+        }
+
+        .interest-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card-content h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Small info boxes */
+        .fact-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .fact-box h4 {
+            font-weight: bold;
+            color: #1d3557;
+        }
+
+        /* Contact */
+        .contact-section {
+            background-color: #e9ecef;
+            padding: 55px 0;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #212529;
+            color: white;
+            padding: 22px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            Aziz's Website
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mainNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About Us
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#images">
+                        Images
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+                <!-- SIGN UP PAGE -->
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">
+                        Sign Up
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- Jumbotron -->
+<div class="jumbotron" id="home">
+
+    <div class="container">
+
+        <h1 class="display-4">
+            Welcome to Aziz's Website
+        </h1>
+
+        <p class="lead">
+            A simple website where I share a few of my interests,
+            including soccer, cars, and traveling.
+        </p>
+
+        <a href="#images"
+           class="btn btn-light btn-lg hero-button">
+
+            Explore My Interests
+
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- About -->
+<section class="about-section" id="about">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <div class="section-line"></div>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-9 text-center">
+
+                <p class="lead">
+                    This website shows a few things that I enjoy in my free time.
+                    I like staying active, learning about cars, and seeing new
+                    places. I created this page using HTML, CSS, and Bootstrap.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Interests / Images -->
+<section class="interests-section" id="images">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h2 class="section-title">
+                My Interests
+            </h2>
+
+            <div class="section-line"></div>
+
+        </div>
+
+
+        <div class="row">
+
+
+            <!-- Soccer -->
+            <div class="col-md-4">
+
+                <div class="interest-card">
+
+                    <img
+                            src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=900&q=80"
+                            class="img-fluid"
+                            alt="Soccer field and soccer ball">
+
+                    <div class="card-content">
+
+                        <h3>Soccer</h3>
+
+                        <p>
+                            Soccer is one of my favorite sports.
+                            I enjoy playing it, watching matches,
+                            and keeping up with different teams.
+                        </p>
+
+                        <span class="badge badge-primary">
+                            Sports
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Cars -->
+            <div class="col-md-4">
+
+                <div class="interest-card">
+
+                    <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80"
+                            class="img-fluid"
+                            alt="Sports car">
+
+                    <div class="card-content">
+
+                        <h3>Cars</h3>
+
+                        <p>
+                            I enjoy learning about cars, different models,
+                            new technology, performance, and how vehicles
+                            work.
+                        </p>
+
+                        <span class="badge badge-secondary">
+                            Automotive
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Travel -->
+            <div class="col-md-4">
+
+                <div class="interest-card">
+
+                    <img
+                            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=900&q=80"
+                            class="img-fluid"
+                            alt="Travel and exploring">
+
+                    <div class="card-content">
+
+                        <h3>Travel</h3>
+
+                        <p>
+                            Traveling gives me a chance to see new places,
+                            learn about different cultures, and experience
+                            things outside my normal routine.
+                        </p>
+
+                        <span class="badge badge-success">
+                            Travel
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Extra section -->
+<section class="pb-5">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <div class="col-md-4">
+
+                <div class="fact-box">
+
+                    <h4>Stay Active</h4>
+
+                    <p>
+                        Playing sports is one of my favorite ways
+                        to stay active.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="fact-box">
+
+                    <h4>Learn</h4>
+
+                    <p>
+                        I enjoy learning new things about technology
+                        and automobiles.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="fact-box">
+
+                    <h4>Explore</h4>
+
+                    <p>
+                        Visiting new places is a great way to experience
+                        different environments and cultures.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact -->
+<section class="contact-section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-box text-center">
+
+            <h2>Contact</h2>
+
+            <p>
+                Thanks for visiting my website.
+                Feel free to contact me if you have any questions.
+            </p>
+
+            <a href="mailto:student@example.com"
+               class="btn btn-primary">
+
+                Send Email
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+    <div class="container">
+
+        <p>
+            &copy; 2026 Aziz's Website | Created with Bootstrap
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
